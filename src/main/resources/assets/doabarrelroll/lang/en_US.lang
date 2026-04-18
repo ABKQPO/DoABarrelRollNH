@@ -1,0 +1,94 @@
+dabr.gui.config.general=General Config
+dabr.gui.config.general.debug=Debug Settings
+dabr.gui.config.general.debug.tooltip=Options for development and debugging.
+
+dabr.gui.config.general.debug.enabledebugmode=Debug Mode
+dabr.gui.config.general.debug.enabledebugmode.tooltip=Enable debug print log output.
+
+dabr.gui.config.general.modenabled=Mod Enabled
+dabr.gui.config.general.modenabled.tooltip=Enable or disable the mod logic entirely.
+
+dabr.gui.config.general.switchrollandyaw=Switch Roll and Yaw
+dabr.gui.config.general.switchrollandyaw.tooltip=Swap roll and yaw axes for mouse input.
+
+dabr.gui.config.general.momentumbasedmouse=Momentum Mouse
+dabr.gui.config.general.momentumbasedmouse.tooltip=Use a momentum-based mouse for continuous turning.
+
+dabr.gui.config.general.invertpitch=Invert Pitch
+dabr.gui.config.general.invertpitch.tooltip=Invert pitch input while rolling.
+
+dabr.gui.config.general.invertyaw=Invert Yaw
+dabr.gui.config.general.invertyaw.tooltip=Invert yaw input while rolling.
+
+dabr.gui.config.general.invertroll=Invert Roll
+dabr.gui.config.general.invertroll.tooltip=Invert roll input while rolling.
+
+dabr.gui.config.general.invertvisualroll=Invert Visual Roll
+dabr.gui.config.general.invertvisualroll.tooltip=Invert the rendered roll (camera + player model) without affecting physics or banking.
+
+dabr.gui.config.general.disablewhensubmerged=Disable When Submerged
+dabr.gui.config.general.disablewhensubmerged.tooltip=Disable roll control when the player is submerged.
+
+dabr.gui.config.general.yawratedegpertick=Yaw Rate (deg/tick)
+dabr.gui.config.general.yawratedegpertick.tooltip=Yaw rate from keys in degrees per tick.
+
+dabr.gui.config.general.barrelrolldurationticks=Barrel Roll Duration
+dabr.gui.config.general.barrelrolldurationticks.tooltip=Barrel-roll animation duration in ticks.
+
+dabr.gui.config.general.barrelrolldodgestrength=Barrel Roll Dodge Strength
+dabr.gui.config.general.barrelrolldodgestrength.tooltip=Horizontal dodge impulse applied during barrel rolls.
+
+dabr.gui.config.general.rollreturndamping=Roll Return Damping
+dabr.gui.config.general.rollreturndamping.tooltip=Roll return damping per tick when not rolling.
+
+dabr.gui.config.general.momentummousedeadzone=Momentum Mouse Deadzone
+dabr.gui.config.general.momentummousedeadzone.tooltip=Deadzone for the momentum-based mouse.
+
+dabr.gui.config.general.smoothing=Smoothing Settings
+dabr.gui.config.general.smoothing.tooltip=Smoothing settings for pitch/yaw/roll inputs.
+
+dabr.gui.config.general.smoothing.enabled=Enable Smoothing
+dabr.gui.config.general.smoothing.enabled.tooltip=Enable smoothing for pitch/yaw/roll inputs.
+
+dabr.gui.config.general.smoothing.pitch=Pitch Smoothing
+dabr.gui.config.general.smoothing.pitch.tooltip=Smoothing strength for pitch.
+
+dabr.gui.config.general.smoothing.yaw=Yaw Smoothing
+dabr.gui.config.general.smoothing.yaw.tooltip=Smoothing strength for yaw.
+
+dabr.gui.config.general.smoothing.roll=Roll Smoothing
+dabr.gui.config.general.smoothing.roll.tooltip=Smoothing strength for roll.
+
+dabr.gui.config.general.smoothing.stopboost=Stop Boost
+dabr.gui.config.general.smoothing.stopboost.tooltip=When raw input is zero, reduces smoothing tail by shrinking internal backlog (higher = stops sooner).
+
+dabr.gui.config.general.banking=Banking Settings
+dabr.gui.config.general.banking.tooltip=Banking and automatic righting settings.
+
+dabr.gui.config.general.banking.enabled=Enable Banking
+dabr.gui.config.general.banking.enabled.tooltip=Enable banking (adds subtle yaw/pitch based on roll).
+
+dabr.gui.config.general.banking.strength=Banking Strength
+dabr.gui.config.general.banking.strength.tooltip=Banking strength.
+
+dabr.gui.config.general.banking.automaticrighting=Automatic Righting
+dabr.gui.config.general.banking.automaticrighting.tooltip=Automatically roll back towards upright.
+
+dabr.gui.config.general.banking.rightingstrength=Righting Strength
+dabr.gui.config.general.banking.rightingstrength.tooltip=Automatic righting strength.
+
+dabr.gui.config.general.sensitivity=Sensitivity Settings
+dabr.gui.config.general.sensitivity.tooltip=Additional sensitivity multipliers for each axis.
+
+dabr.gui.config.general.sensitivity.pitch=Pitch Sensitivity
+dabr.gui.config.general.sensitivity.pitch.tooltip=Additional multiplier for pitch input.
+
+dabr.gui.config.general.sensitivity.yaw=Yaw Sensitivity
+dabr.gui.config.general.sensitivity.yaw.tooltip=Additional multiplier for yaw input.
+
+dabr.gui.config.general.sensitivity.roll=Roll Sensitivity
+dabr.gui.config.general.sensitivity.roll.tooltip=Additional multiplier for roll input.
+
+key.categories.doabarrelroll=Do a Barrel Roll
+key.doabarrelroll.roll_left=Barrel Roll Left
+key.doabarrelroll.roll_right=Barrel Roll Right

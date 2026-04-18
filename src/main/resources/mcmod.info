@@ -1,0 +1,21 @@
+{
+  "modListVersion": 2,
+  "modList": [
+    {
+      "modid": "${modId}",
+      "name": "${modName}",
+      "description": "A Minecraft 1.7.10 port of Do a Barrel Roll.",
+      "version": "${modVersion}",
+      "mcversion": "${minecraftVersion}",
+      "url": "",
+      "updateUrl": "",
+      "authorList": [
+        "HFstudio"
+      ],
+      "credits": "",
+      "logoFile": "assets/doabarrelroll/icon.png",
+      "screenshots": [],
+      "parent": ""
+    }
+  ]
+}
