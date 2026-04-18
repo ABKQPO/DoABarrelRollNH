@@ -92,3 +92,160 @@ dabr.gui.config.general.sensitivity.roll.tooltip=Additional multiplier for roll 
 key.categories.doabarrelroll=Do a Barrel Roll
 key.doabarrelroll.roll_left=Barrel Roll Left
 key.doabarrelroll.roll_right=Barrel Roll Right
+
+# FlightAssistant Config
+dabr.gui.config.fa=FlightAssistant
+dabr.gui.config.fa.tooltip=FlightAssistant aviation HUD and safety systems.
+
+dabr.gui.config.fa.enabled=Enabled
+dabr.gui.config.fa.enabled.tooltip=Enable or disable FlightAssistant module.
+dabr.gui.config.fa.hudenabled=HUD Enabled
+dabr.gui.config.fa.hudenabled.tooltip=Enable HUD display rendering.
+dabr.gui.config.fa.safetyenabled=Safety Enabled
+dabr.gui.config.fa.safetyenabled.tooltip=Enable safety systems (alerts, protections).
+dabr.gui.config.fa.automationsallowedinoverlays=Automations in Overlays
+dabr.gui.config.fa.automationsallowedinoverlays.tooltip=Allow automations (autopilot, auto-thrust) while overlays are open.
+
+dabr.gui.config.fa.display=Display Settings
+dabr.gui.config.fa.display.tooltip=HUD display configuration.
+dabr.gui.config.fa.display.framewidth=Frame Width
+dabr.gui.config.fa.display.framewidth.tooltip=HUD frame width as fraction of screen width (0.1-1.0).
+dabr.gui.config.fa.display.frameheight=Frame Height
+dabr.gui.config.fa.display.frameheight.tooltip=HUD frame height as fraction of screen height (0.1-1.0).
+dabr.gui.config.fa.display.primarycolor=Primary Color
+dabr.gui.config.fa.display.primarycolor.tooltip=Primary HUD color (RGB hex).
+dabr.gui.config.fa.display.secondarycolor=Secondary Color
+dabr.gui.config.fa.display.secondarycolor.tooltip=Secondary HUD color (RGB hex).
+dabr.gui.config.fa.display.primaryadvisorycolor=Advisory Color
+dabr.gui.config.fa.display.primaryadvisorycolor.tooltip=Primary advisory color (RGB hex).
+dabr.gui.config.fa.display.secondaryadvisorycolor=Secondary Advisory Color
+dabr.gui.config.fa.display.secondaryadvisorycolor.tooltip=Secondary advisory color (RGB hex).
+dabr.gui.config.fa.display.cautioncolor=Caution Color
+dabr.gui.config.fa.display.cautioncolor.tooltip=Caution color (RGB hex).
+dabr.gui.config.fa.display.warningcolor=Warning Color
+dabr.gui.config.fa.display.warningcolor.tooltip=Warning color (RGB hex).
+dabr.gui.config.fa.display.showattitude=Attitude Display
+dabr.gui.config.fa.display.showattitude.tooltip=Attitude display mode: 0=Disabled, 1=Horizon only, 2=Horizon+Ladder.
+dabr.gui.config.fa.display.attitudedegreestep=Pitch Ladder Step
+dabr.gui.config.fa.display.attitudedegreestep.tooltip=Pitch ladder degree step (5-45).
+dabr.gui.config.fa.display.drawpitchoutsideframe=Draw Pitch Outside Frame
+dabr.gui.config.fa.display.drawpitchoutsideframe.tooltip=Draw pitch bars outside the HUD frame.
+dabr.gui.config.fa.display.showheadingreading=Heading Reading
+dabr.gui.config.fa.display.showheadingreading.tooltip=Show heading numeric readout.
+dabr.gui.config.fa.display.showheadingscale=Heading Scale
+dabr.gui.config.fa.display.showheadingscale.tooltip=Show heading scale (tape).
+dabr.gui.config.fa.display.showspeedreading=Speed Reading
+dabr.gui.config.fa.display.showspeedreading.tooltip=Show speed numeric readout.
+dabr.gui.config.fa.display.showspeedscale=Speed Scale
+dabr.gui.config.fa.display.showspeedscale.tooltip=Show speed scale (tape).
+dabr.gui.config.fa.display.showaltitudereading=Altitude Reading
+dabr.gui.config.fa.display.showaltitudereading.tooltip=Show altitude numeric readout.
+dabr.gui.config.fa.display.showaltitudescale=Altitude Scale
+dabr.gui.config.fa.display.showaltitudescale.tooltip=Show altitude scale (tape).
+dabr.gui.config.fa.display.showradaraltitude=Radar Altitude
+dabr.gui.config.fa.display.showradaraltitude.tooltip=Show radar altitude (height above ground).
+dabr.gui.config.fa.display.showflightpathvector=Flight Path Vector
+dabr.gui.config.fa.display.showflightpathvector.tooltip=Show flight path vector indicator.
+dabr.gui.config.fa.display.showelytradurabality=Elytra Durability
+dabr.gui.config.fa.display.showelytradurabality.tooltip=Show elytra durability display.
+dabr.gui.config.fa.display.elytradurabilityunits=Durability Units
+dabr.gui.config.fa.display.elytradurabilityunits.tooltip=Durability units: 0=Raw, 1=Percentage, 2=Time.
+dabr.gui.config.fa.display.showcoordinates=Coordinates
+dabr.gui.config.fa.display.showcoordinates.tooltip=Show X/Z coordinates.
+dabr.gui.config.fa.display.showgroundspeed=Ground Speed
+dabr.gui.config.fa.display.showgroundspeed.tooltip=Show ground speed readout.
+dabr.gui.config.fa.display.showverticalspeed=Vertical Speed
+dabr.gui.config.fa.display.showverticalspeed.tooltip=Show vertical speed indicator.
+dabr.gui.config.fa.display.showalerts=Alerts
+dabr.gui.config.fa.display.showalerts.tooltip=Show alert messages.
+dabr.gui.config.fa.display.showstatusmessages=Status Messages
+dabr.gui.config.fa.display.showstatusmessages.tooltip=Show status messages.
+dabr.gui.config.fa.display.showautomationmodes=Automation Modes
+dabr.gui.config.fa.display.showautomationmodes.tooltip=Show automation modes (AP, FD, A/THR).
+dabr.gui.config.fa.display.showflightdirectors=Flight Directors
+dabr.gui.config.fa.display.showflightdirectors.tooltip=Show flight director indicators.
+dabr.gui.config.fa.display.showcoursedeviation=Course Deviation
+dabr.gui.config.fa.display.showcoursedeviation.tooltip=Show course deviation indicator.
+
+dabr.gui.config.fa.safety=Safety Settings
+dabr.gui.config.fa.safety.tooltip=Safety systems configuration.
+dabr.gui.config.fa.safety.alertvolume=Alert Volume
+dabr.gui.config.fa.safety.alertvolume.tooltip=Alert volume (0.0-1.0).
+dabr.gui.config.fa.safety.considerinvulnerability=Consider Invulnerability
+dabr.gui.config.fa.safety.considerinvulnerability.tooltip=Consider player invulnerability for safety alerts.
+dabr.gui.config.fa.safety.elytradurabilityalertmode=Elytra Durability Alert
+dabr.gui.config.fa.safety.elytradurabilityalertmode.tooltip=Elytra durability alert mode: 0=Off, 1=Caution, 2=Warning, 3=Both.
+dabr.gui.config.fa.safety.elytraautoopen=Elytra Auto-Open
+dabr.gui.config.fa.safety.elytraautoopen.tooltip=Auto-open elytra when falling.
+dabr.gui.config.fa.safety.stallalertmode=Stall Alert
+dabr.gui.config.fa.safety.stallalertmode.tooltip=Stall alert mode: 0=Off, 1=Caution, 2=Warning, 3=Both.
+dabr.gui.config.fa.safety.stalllimitpitch=Stall Limit Pitch
+dabr.gui.config.fa.safety.stalllimitpitch.tooltip=Limit pitch to prevent stall.
+dabr.gui.config.fa.safety.stallautothrust=Stall Auto-Thrust
+dabr.gui.config.fa.safety.stallautothrust.tooltip=Auto-thrust to recover from stall.
+dabr.gui.config.fa.safety.voidalertmode=Void Alert
+dabr.gui.config.fa.safety.voidalertmode.tooltip=Void proximity alert mode: 0=Off, 1=Caution, 2=Warning, 3=Both.
+dabr.gui.config.fa.safety.voidlimitpitch=Void Limit Pitch
+dabr.gui.config.fa.safety.voidlimitpitch.tooltip=Limit pitch near void.
+dabr.gui.config.fa.safety.voidautothrust=Void Auto-Thrust
+dabr.gui.config.fa.safety.voidautothrust.tooltip=Auto-thrust near void.
+dabr.gui.config.fa.safety.voidautopitch=Void Auto-Pitch
+dabr.gui.config.fa.safety.voidautopitch.tooltip=Auto-pitch near void.
+dabr.gui.config.fa.safety.sinkratealertmode=Sink Rate Alert
+dabr.gui.config.fa.safety.sinkratealertmode.tooltip=Sink rate alert mode: 0=Off, 1=Caution, 2=Warning, 3=Both.
+dabr.gui.config.fa.safety.sinkratelimitpitch=Sink Rate Limit Pitch
+dabr.gui.config.fa.safety.sinkratelimitpitch.tooltip=Limit pitch on excessive sink rate.
+dabr.gui.config.fa.safety.sinkrateautothrust=Sink Rate Auto-Thrust
+dabr.gui.config.fa.safety.sinkrateautothrust.tooltip=Auto-thrust on excessive sink rate.
+dabr.gui.config.fa.safety.sinkrateautopitch=Sink Rate Auto-Pitch
+dabr.gui.config.fa.safety.sinkrateautopitch.tooltip=Auto-pitch on excessive sink rate.
+dabr.gui.config.fa.safety.obstaclealertmode=Obstacle Alert
+dabr.gui.config.fa.safety.obstaclealertmode.tooltip=Obstacle alert mode: 0=Off, 1=Caution, 2=Warning, 3=Both.
+dabr.gui.config.fa.safety.obstacleautothrust=Obstacle Auto-Thrust
+dabr.gui.config.fa.safety.obstacleautothrust.tooltip=Auto-thrust for obstacle avoidance.
+dabr.gui.config.fa.safety.obstacleautopitch=Obstacle Auto-Pitch
+dabr.gui.config.fa.safety.obstacleautopitch.tooltip=Auto-pitch for obstacle avoidance.
+dabr.gui.config.fa.safety.altitudelossalert=Altitude Loss Alert
+dabr.gui.config.fa.safety.altitudelossalert.tooltip=Alert on significant altitude loss.
+dabr.gui.config.fa.safety.belowglideslopealertmode=Below Glide Slope Alert
+dabr.gui.config.fa.safety.belowglideslopealertmode.tooltip=Below glide slope alert mode: 0=Off, 1=Caution, 2=Warning, 3=Both.
+dabr.gui.config.fa.safety.fireworkexplosivealert=Firework Explosive Alert
+dabr.gui.config.fa.safety.fireworkexplosivealert.tooltip=Alert for explosive fireworks.
+dabr.gui.config.fa.safety.fireworklockexplosive=Lock Explosive Fireworks
+dabr.gui.config.fa.safety.fireworklockexplosive.tooltip=Lock hotbar when explosive firework detected.
+dabr.gui.config.fa.safety.fireworklockobstacles=Lock Fireworks Near Obstacles
+dabr.gui.config.fa.safety.fireworklockobstacles.tooltip=Lock firework use near obstacles.
+
+key.categories.flightassistant=FlightAssistant
+key.flightassistant.toggleAP=Toggle Autopilot
+key.flightassistant.toggleFD=Toggle Flight Directors
+key.flightassistant.toggleATHR=Toggle Auto-Thrust
+
+# ElytraHUD Config
+dabr.gui.config.elytrahud=ElytraHUD
+dabr.gui.config.elytrahud.tooltip=ElytraHUD gauge-style flight HUD configuration.
+
+dabr.gui.config.elytrahud.enabled=Enabled
+dabr.gui.config.elytrahud.enabled.tooltip=Enable or disable ElytraHUD module.
+dabr.gui.config.elytrahud.renderairspeed=Airspeed Gauge
+dabr.gui.config.elytrahud.renderairspeed.tooltip=Render the airspeed gauge.
+dabr.gui.config.elytrahud.renderfireworksrate=Firework Rate Gauge
+dabr.gui.config.elytrahud.renderfireworksrate.tooltip=Render the firework rate gauge.
+dabr.gui.config.elytrahud.renderdurability=Durability Bar
+dabr.gui.config.elytrahud.renderdurability.tooltip=Render the elytra durability bar.
+dabr.gui.config.elytrahud.renderaltitude=Altitude Gauge
+dabr.gui.config.elytrahud.renderaltitude.tooltip=Render the altitude gauge.
+dabr.gui.config.elytrahud.rendervertical=Vertical Speed Gauge
+dabr.gui.config.elytrahud.rendervertical.tooltip=Render the vertical speed gauge.
+dabr.gui.config.elytrahud.rendercompass=Compass
+dabr.gui.config.elytrahud.rendercompass.tooltip=Render the compass.
+dabr.gui.config.elytrahud.rendertitles=Gauge Titles
+dabr.gui.config.elytrahud.rendertitles.tooltip=Render gauge titles.
+dabr.gui.config.elytrahud.rendervalues=Numeric Values
+dabr.gui.config.elytrahud.rendervalues.tooltip=Render numeric values on gauges.
+dabr.gui.config.elytrahud.thirdpersonenabled=Third Person Switch
+dabr.gui.config.elytrahud.thirdpersonenabled.tooltip=Auto-switch to third person on elytra open.
+dabr.gui.config.elytrahud.compassdefaultx=Compass Position X
+dabr.gui.config.elytrahud.compassdefaultx.tooltip=Compass horizontal position offset (0-100, percentage of screen).
+dabr.gui.config.elytrahud.hudscale=HUD Scale
+dabr.gui.config.elytrahud.hudscale.tooltip=HUD display scale (0.5 = half size, 2.0 = double size).

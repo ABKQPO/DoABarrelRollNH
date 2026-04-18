@@ -2,6 +2,8 @@ package com.hfstudio;
 
 import net.minecraftforge.common.MinecraftForge;
 
+import com.hfstudio.elytrahud.ElytraHudModule;
+import com.hfstudio.flightassistant.FlightAssistantModule;
 import com.hfstudio.roll.ClientEventHandler;
 import com.hfstudio.roll.RollKeyBindings;
 
@@ -17,10 +19,15 @@ public class ClientProxy extends CommonProxy {
     public void preInit(FMLPreInitializationEvent event) {
         super.preInit(event);
         RollKeyBindings.register();
-        MinecraftForge.EVENT_BUS.register(new ClientEventHandler());
+
+        ClientEventHandler rollHandler = new ClientEventHandler();
+        MinecraftForge.EVENT_BUS.register(rollHandler);
         FMLCommonHandler.instance()
             .bus()
-            .register(new ClientEventHandler());
+            .register(rollHandler);
+
+        ElytraHudModule.initClient();
+        FlightAssistantModule.initClient();
     }
 
     @Override

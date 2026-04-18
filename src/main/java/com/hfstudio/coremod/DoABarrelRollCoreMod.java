@@ -8,6 +8,8 @@ import com.gtnewhorizon.gtnhlib.config.ConfigException;
 import com.gtnewhorizon.gtnhmixins.IEarlyMixinLoader;
 import com.gtnewhorizon.gtnhmixins.builders.IMixins;
 import com.hfstudio.config.ModConfig;
+import com.hfstudio.elytrahud.ElytraHudConfig;
+import com.hfstudio.flightassistant.FAConfig;
 import com.hfstudio.mixins.Mixins;
 
 import cpw.mods.fml.relauncher.IFMLLoadingPlugin;
@@ -18,6 +20,8 @@ public class DoABarrelRollCoreMod implements IFMLLoadingPlugin, IEarlyMixinLoade
     static {
         try {
             ModConfig.registerConfig();
+            ElytraHudConfig.registerConfig();
+            FAConfig.registerConfig();
         } catch (ConfigException e) {
             throw new RuntimeException(e);
         }

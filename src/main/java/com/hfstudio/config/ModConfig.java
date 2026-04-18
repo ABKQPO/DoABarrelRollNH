@@ -12,7 +12,7 @@ import com.gtnewhorizon.gtnhlib.config.ConfigException;
 import com.gtnewhorizon.gtnhlib.config.ConfigurationManager;
 import com.hfstudio.DoABarrelRollNH;
 
-@Config(modid = DoABarrelRollNH.MODID, configSubDirectory = "DoABarrelRoll")
+@Config(modid = DoABarrelRollNH.MODID, filename = "doabarrelroll", configSubDirectory = "DoABarrelRoll")
 @Config.LangKeyPattern(pattern = "dabr.gui.config.%cat.%field", fullyQualified = true)
 @Comment("Do a Barrel Roll NH configuration")
 public class ModConfig {
