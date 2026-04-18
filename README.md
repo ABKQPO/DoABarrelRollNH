@@ -68,7 +68,7 @@ The output jar will be in `build/libs/`.
 ## Credits
 
 - Original mod: [Do a Barrel Roll](https://modrinth.com/mod/do-a-barrel-roll) by Enjarai
-- 1.12.2 reference port: [RollTheSky](https://github.com/Etern-34520/RollTheSky) by Etern-34520
+- 1.12.2 reference port: [RollTheSky](https://github.com/qiMengStars/RollTheSky) by qiMengStars
 - 1.7.10 GTNH port: HFstudio
 
 ## License
