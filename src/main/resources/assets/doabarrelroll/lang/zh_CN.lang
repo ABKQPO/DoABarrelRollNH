@@ -215,6 +215,8 @@ dabr.gui.config.fa.safety.fireworklockexplosive=锁定爆炸烟花
 dabr.gui.config.fa.safety.fireworklockexplosive.tooltip=检测到爆炸烟花时锁定快捷栏
 dabr.gui.config.fa.safety.fireworklockobstacles=障碍物附近锁定烟花
 dabr.gui.config.fa.safety.fireworklockobstacles.tooltip=障碍物附近时锁定烟花使用
+dabr.gui.config.fa.safety.throwtntenabled=启用投掷TNT
+dabr.gui.config.fa.safety.throwtntenabled.tooltip=允许在鞘翅飞行时手持TNT右键投掷已激活的TNT。该选项由服务端同步控制。
 
 key.categories.flightassistant=飞行助手
 key.flightassistant.toggleAP=切换自动驾驶

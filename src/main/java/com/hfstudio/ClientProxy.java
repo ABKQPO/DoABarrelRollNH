@@ -4,6 +4,7 @@ import net.minecraftforge.common.MinecraftForge;
 
 import com.hfstudio.elytrahud.ElytraHudModule;
 import com.hfstudio.flightassistant.FlightAssistantModule;
+import com.hfstudio.network.ServerModDetector;
 import com.hfstudio.roll.ClientEventHandler;
 import com.hfstudio.roll.RollKeyBindings;
 
@@ -25,6 +26,12 @@ public class ClientProxy extends CommonProxy {
         FMLCommonHandler.instance()
             .bus()
             .register(rollHandler);
+
+        // Detect whether the server has this mod installed via plugin-channel handshake
+        ServerModDetector detector = new ServerModDetector();
+        FMLCommonHandler.instance()
+            .bus()
+            .register(detector);
 
         ElytraHudModule.initClient();
         FlightAssistantModule.initClient();

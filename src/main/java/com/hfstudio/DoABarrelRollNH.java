@@ -32,8 +32,6 @@ public class DoABarrelRollNH {
     public static final String ARTHOR = "HFstudio";
     public static final Logger LOG = LogManager.getLogger(MODID);
 
-    public static boolean debug = false;
-
     @SidedProxy(clientSide = "com.hfstudio.ClientProxy", serverSide = "com.hfstudio.CommonProxy")
     public static CommonProxy proxy;
 

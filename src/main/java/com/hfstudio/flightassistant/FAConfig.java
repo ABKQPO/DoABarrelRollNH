@@ -7,6 +7,7 @@ import com.gtnewhorizon.gtnhlib.config.Config.DefaultFloat;
 import com.gtnewhorizon.gtnhlib.config.Config.DefaultInt;
 import com.gtnewhorizon.gtnhlib.config.Config.RangeFloat;
 import com.gtnewhorizon.gtnhlib.config.Config.RangeInt;
+import com.gtnewhorizon.gtnhlib.config.Config.Sync;
 import com.gtnewhorizon.gtnhlib.config.ConfigException;
 import com.gtnewhorizon.gtnhlib.config.ConfigurationManager;
 import com.hfstudio.DoABarrelRollNH;
@@ -313,6 +314,11 @@ public class FAConfig {
         @Comment("Lock firework use near obstacles")
         @DefaultBoolean(true)
         public boolean fireworkLockObstacles = true;
+
+        @Comment("Allow throwing primed TNT while elytra flying by right-clicking TNT")
+        @DefaultBoolean(false)
+        @Sync(true)
+        public boolean throwTntEnabled = false;
 
         public boolean isWarningEnabled(int alertMode) {
             return alertMode == 2 || alertMode == 3;

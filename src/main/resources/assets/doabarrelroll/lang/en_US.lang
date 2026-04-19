@@ -215,6 +215,8 @@ dabr.gui.config.fa.safety.fireworklockexplosive=Lock Explosive Fireworks
 dabr.gui.config.fa.safety.fireworklockexplosive.tooltip=Lock hotbar when explosive firework detected.
 dabr.gui.config.fa.safety.fireworklockobstacles=Lock Fireworks Near Obstacles
 dabr.gui.config.fa.safety.fireworklockobstacles.tooltip=Lock firework use near obstacles.
+dabr.gui.config.fa.safety.throwtntenabled=Enable TNT Throwing
+dabr.gui.config.fa.safety.throwtntenabled.tooltip=Allow throwing primed TNT while elytra flying by right-clicking TNT. This option is synced from the server.
 
 key.categories.flightassistant=FlightAssistant
 key.flightassistant.toggleAP=Toggle Autopilot
