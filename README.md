@@ -47,11 +47,6 @@ This mod overhauls elytra flight controls, giving the player full 3-axis (pitch,
 - **Compass** — Rotating compass with heading degrees
 - **Configurable** — Toggle each gauge, titles, and numeric values independently
 
-### Mutual Exclusion
-- FlightAssistant and ElytraHUD cannot be active simultaneously
-- If both are enabled in config, FlightAssistant HUD takes priority and ElytraHUD is disabled
-- If FlightAssistant HUD is disabled (but safety is on), ElytraHUD can still render
-
 ## Dependencies
 
 | Dependency | Required | Purpose |
