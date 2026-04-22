@@ -1,4 +1,4 @@
-package com.hfstudio.network;
+package com.hfstudio.doabarrelroll.network;
 
 import net.minecraft.entity.item.EntityTNTPrimed;
 import net.minecraft.entity.player.EntityPlayer;
@@ -8,7 +8,7 @@ import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemFlintAndSteel;
 import net.minecraft.item.ItemStack;
 
-import com.hfstudio.DoABarrelRollNH;
+import com.hfstudio.doabarrelroll.DoABarrelRollNH;
 import com.hfstudio.flightassistant.FAConfig;
 
 import cpw.mods.fml.common.network.simpleimpl.IMessageHandler;

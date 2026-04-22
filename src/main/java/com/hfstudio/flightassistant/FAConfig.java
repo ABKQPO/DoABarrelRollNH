@@ -10,7 +10,7 @@ import com.gtnewhorizon.gtnhlib.config.Config.RangeInt;
 import com.gtnewhorizon.gtnhlib.config.Config.Sync;
 import com.gtnewhorizon.gtnhlib.config.ConfigException;
 import com.gtnewhorizon.gtnhlib.config.ConfigurationManager;
-import com.hfstudio.DoABarrelRollNH;
+import com.hfstudio.doabarrelroll.DoABarrelRollNH;
 
 /**
  * FlightAssistant configuration.

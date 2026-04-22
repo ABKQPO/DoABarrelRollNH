@@ -1,11 +1,11 @@
-package com.hfstudio.roll;
+package com.hfstudio.doabarrelroll.roll;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.EntityClientPlayerMP;
 import net.minecraft.client.entity.EntityPlayerSP;
 import net.minecraft.client.settings.GameSettings;
 
-import com.hfstudio.config.ModConfig;
+import com.hfstudio.doabarrelroll.config.ModConfig;
 
 import ganymedes01.etfuturum.api.elytra.IElytraPlayer;
 

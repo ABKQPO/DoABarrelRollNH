@@ -1,8 +1,8 @@
-package com.hfstudio.roll;
+package com.hfstudio.doabarrelroll.roll;
 
 import net.minecraft.util.MathHelper;
 
-import com.hfstudio.config.ModConfig;
+import com.hfstudio.doabarrelroll.config.ModConfig;
 
 /**
  * Player render orientation computation.

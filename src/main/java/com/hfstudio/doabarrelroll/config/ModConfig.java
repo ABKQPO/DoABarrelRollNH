@@ -1,4 +1,4 @@
-package com.hfstudio.config;
+package com.hfstudio.doabarrelroll.config;
 
 import com.gtnewhorizon.gtnhlib.config.Config;
 import com.gtnewhorizon.gtnhlib.config.Config.Comment;
@@ -10,7 +10,7 @@ import com.gtnewhorizon.gtnhlib.config.Config.RangeFloat;
 import com.gtnewhorizon.gtnhlib.config.Config.RequiresMcRestart;
 import com.gtnewhorizon.gtnhlib.config.ConfigException;
 import com.gtnewhorizon.gtnhlib.config.ConfigurationManager;
-import com.hfstudio.DoABarrelRollNH;
+import com.hfstudio.doabarrelroll.DoABarrelRollNH;
 
 @Config(modid = DoABarrelRollNH.MODID, filename = "doabarrelroll", configSubDirectory = "DoABarrelRoll")
 @Config.LangKeyPattern(pattern = "dabr.gui.config.%cat.%field", fullyQualified = true)

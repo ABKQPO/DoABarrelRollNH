@@ -1,7 +1,7 @@
-package com.hfstudio;
+package com.hfstudio.doabarrelroll;
 
-import static com.hfstudio.DoABarrelRollNH.MODID;
-import static com.hfstudio.DoABarrelRollNH.MODNAME;
+import static com.hfstudio.doabarrelroll.DoABarrelRollNH.MODID;
+import static com.hfstudio.doabarrelroll.DoABarrelRollNH.MODNAME;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -32,7 +32,9 @@ public class DoABarrelRollNH {
     public static final String ARTHOR = "HFstudio";
     public static final Logger LOG = LogManager.getLogger(MODID);
 
-    @SidedProxy(clientSide = "com.hfstudio.ClientProxy", serverSide = "com.hfstudio.CommonProxy")
+    @SidedProxy(
+        clientSide = "com.hfstudio.doabarrelroll.ClientProxy",
+        serverSide = "com.hfstudio.doabarrelroll.CommonProxy")
     public static CommonProxy proxy;
 
     // preInit "Run before anything else. Read your config, create blocks, items, etc, and register them with the

@@ -52,3 +52,5 @@ layout.json
 
 ### Mac OS ###
 .DS_Store
+/temp_decompile
+/temp_decompile_src

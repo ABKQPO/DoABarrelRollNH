@@ -2,7 +2,7 @@ package com.hfstudio.elytrahud;
 
 import net.minecraftforge.common.MinecraftForge;
 
-import com.hfstudio.DoABarrelRollNH;
+import com.hfstudio.doabarrelroll.DoABarrelRollNH;
 
 import cpw.mods.fml.common.FMLCommonHandler;
 

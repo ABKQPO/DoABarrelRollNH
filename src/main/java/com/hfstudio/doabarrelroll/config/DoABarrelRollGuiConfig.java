@@ -1,10 +1,10 @@
-package com.hfstudio.config;
+package com.hfstudio.doabarrelroll.config;
 
 import net.minecraft.client.gui.GuiScreen;
 
 import com.gtnewhorizon.gtnhlib.config.ConfigException;
 import com.gtnewhorizon.gtnhlib.config.SimpleGuiConfig;
-import com.hfstudio.DoABarrelRollNH;
+import com.hfstudio.doabarrelroll.DoABarrelRollNH;
 import com.hfstudio.elytrahud.ElytraHudConfig;
 import com.hfstudio.flightassistant.FAConfig;
 

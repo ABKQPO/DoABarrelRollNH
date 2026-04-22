@@ -1,4 +1,4 @@
-package com.hfstudio.roll;
+package com.hfstudio.doabarrelroll.roll;
 
 import net.minecraft.client.settings.KeyBinding;
 

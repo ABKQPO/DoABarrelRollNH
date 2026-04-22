@@ -38,7 +38,7 @@ public class HudDisplayDataComputer extends Computer {
         lerpedAltitude = data.getAltitude();
 
         // Roll from DoABarrelRoll state
-        roll = com.hfstudio.roll.RollRuntime.getVisualRoll(t);
+        roll = com.hfstudio.doabarrelroll.roll.RollRuntime.getVisualRoll(t);
     }
 
     @Override

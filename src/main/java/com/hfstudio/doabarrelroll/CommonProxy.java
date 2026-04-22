@@ -1,6 +1,6 @@
-package com.hfstudio;
+package com.hfstudio.doabarrelroll;
 
-import com.hfstudio.network.ModNetworkHandler;
+import com.hfstudio.doabarrelroll.network.ModNetworkHandler;
 
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLLoadCompleteEvent;

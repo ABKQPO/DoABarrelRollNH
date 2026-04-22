@@ -1,4 +1,4 @@
-package com.hfstudio.coremod;
+package com.hfstudio.doabarrelroll.coremod;
 
 import java.util.List;
 import java.util.Map;
@@ -7,10 +7,10 @@ import java.util.Set;
 import com.gtnewhorizon.gtnhlib.config.ConfigException;
 import com.gtnewhorizon.gtnhmixins.IEarlyMixinLoader;
 import com.gtnewhorizon.gtnhmixins.builders.IMixins;
-import com.hfstudio.config.ModConfig;
+import com.hfstudio.doabarrelroll.config.ModConfig;
+import com.hfstudio.doabarrelroll.mixins.Mixins;
 import com.hfstudio.elytrahud.ElytraHudConfig;
 import com.hfstudio.flightassistant.FAConfig;
-import com.hfstudio.mixins.Mixins;
 
 import cpw.mods.fml.relauncher.IFMLLoadingPlugin;
 

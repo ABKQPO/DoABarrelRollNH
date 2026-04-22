@@ -1,4 +1,4 @@
-package com.hfstudio.roll;
+package com.hfstudio.doabarrelroll.roll;
 
 /**
  * Flight control input axis mapping.

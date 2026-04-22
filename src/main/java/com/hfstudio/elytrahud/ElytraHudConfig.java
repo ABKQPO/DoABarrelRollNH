@@ -9,7 +9,7 @@ import com.gtnewhorizon.gtnhlib.config.Config.RangeFloat;
 import com.gtnewhorizon.gtnhlib.config.Config.RangeInt;
 import com.gtnewhorizon.gtnhlib.config.ConfigException;
 import com.gtnewhorizon.gtnhlib.config.ConfigurationManager;
-import com.hfstudio.DoABarrelRollNH;
+import com.hfstudio.doabarrelroll.DoABarrelRollNH;
 
 @Config(
     modid = DoABarrelRollNH.MODID,

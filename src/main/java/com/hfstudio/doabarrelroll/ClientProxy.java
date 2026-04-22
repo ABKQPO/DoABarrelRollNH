@@ -1,12 +1,12 @@
-package com.hfstudio;
+package com.hfstudio.doabarrelroll;
 
 import net.minecraftforge.common.MinecraftForge;
 
+import com.hfstudio.doabarrelroll.network.ServerModDetector;
+import com.hfstudio.doabarrelroll.roll.ClientEventHandler;
+import com.hfstudio.doabarrelroll.roll.RollKeyBindings;
 import com.hfstudio.elytrahud.ElytraHudModule;
 import com.hfstudio.flightassistant.FlightAssistantModule;
-import com.hfstudio.network.ServerModDetector;
-import com.hfstudio.roll.ClientEventHandler;
-import com.hfstudio.roll.RollKeyBindings;
 
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;

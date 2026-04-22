@@ -1,4 +1,4 @@
-package com.hfstudio.config;
+package com.hfstudio.doabarrelroll.config;
 
 import java.util.Collections;
 import java.util.Set;

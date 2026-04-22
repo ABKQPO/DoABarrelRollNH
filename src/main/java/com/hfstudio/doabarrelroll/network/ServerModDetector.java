@@ -1,4 +1,4 @@
-package com.hfstudio.network;
+package com.hfstudio.doabarrelroll.network;
 
 import net.minecraft.client.network.NetHandlerPlayClient;
 

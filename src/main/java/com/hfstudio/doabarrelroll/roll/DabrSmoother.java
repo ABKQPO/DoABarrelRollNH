@@ -1,4 +1,4 @@
-package com.hfstudio.roll;
+package com.hfstudio.doabarrelroll.roll;
 
 /**
  * Approximate implementation of Mojang's modern Smoother.

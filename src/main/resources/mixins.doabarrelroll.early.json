@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8.3-GTNH",
-  "package": "com.hfstudio.mixins.early",
+  "package": "com.hfstudio.doabarrelroll.mixins.early",
   "refmap": "mixins.doabarrelroll.refmap.json",
   "target": "@env(DEFAULT)",
   "compatibilityLevel": "JAVA_8"

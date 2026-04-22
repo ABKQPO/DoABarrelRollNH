@@ -1,4 +1,4 @@
-package com.hfstudio.mixins;
+package com.hfstudio.doabarrelroll.mixins;
 
 import com.gtnewhorizon.gtnhmixins.builders.IMixins;
 import com.gtnewhorizon.gtnhmixins.builders.MixinBuilder;

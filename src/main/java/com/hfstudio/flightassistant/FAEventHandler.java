@@ -10,14 +10,14 @@ import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.client.event.RenderWorldLastEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 
+import com.hfstudio.doabarrelroll.network.ModNetworkHandler;
+import com.hfstudio.doabarrelroll.network.ServerModDetector;
+import com.hfstudio.doabarrelroll.network.ThrowTntMessage;
 import com.hfstudio.flightassistant.computer.ComputerHost;
 import com.hfstudio.flightassistant.display.HudDisplayHost;
 import com.hfstudio.flightassistant.util.FADrawHelper;
 import com.hfstudio.flightassistant.util.FATickCounter;
 import com.hfstudio.flightassistant.util.RenderMatrices;
-import com.hfstudio.network.ModNetworkHandler;
-import com.hfstudio.network.ServerModDetector;
-import com.hfstudio.network.ThrowTntMessage;
 
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.TickEvent;

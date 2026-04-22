@@ -1,4 +1,4 @@
-package com.hfstudio.network;
+package com.hfstudio.doabarrelroll.network;
 
 import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.network.simpleimpl.SimpleNetworkWrapper;

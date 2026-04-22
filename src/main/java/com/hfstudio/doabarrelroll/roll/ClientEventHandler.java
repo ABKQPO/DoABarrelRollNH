@@ -1,9 +1,9 @@
-package com.hfstudio.roll;
+package com.hfstudio.doabarrelroll.roll;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.EntityClientPlayerMP;
 
-import com.hfstudio.config.ModConfig;
+import com.hfstudio.doabarrelroll.config.ModConfig;
 
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.TickEvent;

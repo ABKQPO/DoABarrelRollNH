@@ -1,4 +1,4 @@
-package com.hfstudio.mixins.early.Minecraft;
+package com.hfstudio.doabarrelroll.mixins.early.Minecraft;
 
 import net.minecraft.client.entity.EntityPlayerSP;
 
@@ -7,7 +7,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-import com.hfstudio.roll.RollRuntime;
+import com.hfstudio.doabarrelroll.roll.RollRuntime;
 
 /**
  * EntityPlayerSP Mixin.
