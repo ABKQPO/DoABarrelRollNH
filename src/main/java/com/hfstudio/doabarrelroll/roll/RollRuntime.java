@@ -6,8 +6,7 @@ import net.minecraft.client.entity.EntityPlayerSP;
 import net.minecraft.client.settings.GameSettings;
 
 import com.hfstudio.doabarrelroll.config.ModConfig;
-
-import ganymedes01.etfuturum.api.elytra.IElytraPlayer;
+import com.hfstudio.doabarrelroll.util.ElytraEquipmentResolver;
 
 /**
  * Core runtime.
@@ -27,7 +26,7 @@ public final class RollRuntime {
     private RollRuntime() {}
 
     public static boolean isElytraFlying(EntityPlayerSP player) {
-        return player instanceof IElytraPlayer && ((IElytraPlayer) player).etfu$isElytraFlying();
+        return ElytraEquipmentResolver.isElytraFlying(player);
     }
 
     public static boolean shouldRoll(EntityPlayerSP player) {

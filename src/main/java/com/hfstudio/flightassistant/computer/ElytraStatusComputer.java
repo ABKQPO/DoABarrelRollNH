@@ -3,6 +3,7 @@ package com.hfstudio.flightassistant.computer;
 import net.minecraft.client.entity.EntityPlayerSP;
 import net.minecraft.item.ItemStack;
 
+import com.hfstudio.doabarrelroll.util.ElytraEquipmentResolver;
 import com.hfstudio.flightassistant.FAConfig;
 
 import ganymedes01.etfuturum.api.elytra.IElytraPlayer;
@@ -38,11 +39,10 @@ public class ElytraStatusComputer extends Computer {
             return;
         }
 
-        // Chest slot (index 2 in armorInventory)
-        ItemStack chestItem = player.inventory.armorInventory[2];
-        if (chestItem != null && chestItem.getMaxDamage() > 0) {
-            maxDurability = chestItem.getMaxDamage();
-            durability = maxDurability - chestItem.getItemDamage();
+        ItemStack equippedElytra = ElytraEquipmentResolver.findEquippedElytra(player);
+        if (equippedElytra != null && equippedElytra.getMaxDamage() > 0) {
+            maxDurability = equippedElytra.getMaxDamage();
+            durability = maxDurability - equippedElytra.getItemDamage();
             durabilityPercent = (float) durability / (float) maxDurability;
         } else {
             maxDurability = 0;
@@ -59,7 +59,7 @@ public class ElytraStatusComputer extends Computer {
 
         // Elytra auto-open: when falling with elytra equipped
         if (FAConfig.safety.elytraAutoOpen && !data.isFlying() && !player.onGround && player.motionY < -0.1) {
-            ItemStack elytra = ItemArmorElytra.getElytra(player);
+            ItemStack elytra = ElytraEquipmentResolver.findEquippedElytra(player);
             if (elytra != null && !ItemArmorElytra.isBroken(elytra)) {
                 fallTicks++;
                 if (fallTicks >= FALL_TICKS_BEFORE_AUTO_OPEN && player instanceof IElytraPlayer

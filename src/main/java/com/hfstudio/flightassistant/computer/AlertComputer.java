@@ -184,6 +184,7 @@ public class AlertComputer extends Computer {
             alert.setActive(false);
         }
         activeAlerts.clear();
+        alertSoundCooldown = 0;
     }
 
     public boolean hasWarnings() {

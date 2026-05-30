@@ -2,7 +2,7 @@ package com.hfstudio.flightassistant.util;
 
 import net.minecraft.client.entity.EntityPlayerSP;
 
-import ganymedes01.etfuturum.api.elytra.IElytraPlayer;
+import com.hfstudio.doabarrelroll.util.ElytraEquipmentResolver;
 
 /**
  * Tick counter for FlightAssistant.
@@ -31,7 +31,7 @@ public final class FATickCounter {
             return;
         }
 
-        boolean isFlying = player instanceof IElytraPlayer && ((IElytraPlayer) player).etfu$isElytraFlying();
+        boolean isFlying = ElytraEquipmentResolver.isElytraFlying(player);
 
         if (!wasFlying && isFlying) {
             ticksSinceWorldLoad = 0;

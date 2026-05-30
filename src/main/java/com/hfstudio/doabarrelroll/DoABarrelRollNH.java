@@ -19,7 +19,7 @@ import cpw.mods.fml.common.event.FMLServerStartingEvent;
     modid = MODID,
     version = Tags.VERSION,
     name = MODNAME,
-    guiFactory = "com.hfstudio.config.DoABarrelRollGuiFactory",
+    guiFactory = "com.hfstudio.doabarrelroll.config.DoABarrelRollGuiFactory",
     acceptableRemoteVersions = "*",
     acceptedMinecraftVersions = "[1.7.10]")
 public class DoABarrelRollNH {

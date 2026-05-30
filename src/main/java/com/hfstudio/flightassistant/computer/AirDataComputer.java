@@ -6,9 +6,8 @@ import net.minecraft.client.multiplayer.WorldClient;
 import net.minecraft.util.MathHelper;
 import net.minecraft.util.Vec3;
 
+import com.hfstudio.doabarrelroll.util.ElytraEquipmentResolver;
 import com.hfstudio.flightassistant.FAConfig;
-
-import ganymedes01.etfuturum.api.elytra.IElytraPlayer;
 
 /**
  * Core air data computer.
@@ -45,7 +44,7 @@ public class AirDataComputer extends Computer {
 
     public boolean isFlying() {
         EntityPlayerSP p = getPlayer();
-        return p instanceof IElytraPlayer && ((IElytraPlayer) p).etfu$isElytraFlying();
+        return ElytraEquipmentResolver.isElytraFlying(p);
     }
 
     public double getX() {

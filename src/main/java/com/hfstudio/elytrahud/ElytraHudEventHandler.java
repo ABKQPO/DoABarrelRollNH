@@ -33,6 +33,9 @@ public class ElytraHudEventHandler {
         if (!isEnabled()) return;
 
         Minecraft mc = Minecraft.getMinecraft();
+        if (mc.isGamePaused()) {
+            return;
+        }
         EntityPlayerSP player = mc.thePlayer;
         if (player == null) return;
 

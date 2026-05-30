@@ -13,6 +13,7 @@ import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import com.hfstudio.doabarrelroll.network.ModNetworkHandler;
 import com.hfstudio.doabarrelroll.network.ServerModDetector;
 import com.hfstudio.doabarrelroll.network.ThrowTntMessage;
+import com.hfstudio.doabarrelroll.util.ElytraEquipmentResolver;
 import com.hfstudio.flightassistant.computer.ComputerHost;
 import com.hfstudio.flightassistant.display.HudDisplayHost;
 import com.hfstudio.flightassistant.util.FADrawHelper;
@@ -117,21 +118,18 @@ public class FAEventHandler {
 
         FATickCounter.tick(mc.thePlayer, 1.0f, mc.isGamePaused());
 
-        boolean flying = (mc.thePlayer instanceof IElytraPlayer)
-            && ((IElytraPlayer) mc.thePlayer).etfu$isElytraFlying();
+        boolean flying = ElytraEquipmentResolver.isElytraFlying(mc.thePlayer);
 
         if (flying && !wasFlying) {
-            // Just started flying
             computers.resetAll();
         }
 
-        if (flying || wasFlying) {
+        if (!mc.isGamePaused() && (flying || wasFlying)) {
             computers.tick();
             FAKeyBindings.processKeyBindings(this);
         }
 
-        if (!flying && wasFlying) {
-            // Just stopped flying
+        if ((!flying && wasFlying) || mc.isGamePaused()) {
             computers.resetAll();
         }
 
@@ -153,7 +151,7 @@ public class FAEventHandler {
             return;
         }
         EntityPlayerSP player = (EntityPlayerSP) event.entityPlayer;
-        if (!(player instanceof IElytraPlayer) || !((IElytraPlayer) player).etfu$isElytraFlying()) {
+        if (!ElytraEquipmentResolver.isElytraFlying(player)) {
             return;
         }
         ItemStack held = player.getHeldItem();

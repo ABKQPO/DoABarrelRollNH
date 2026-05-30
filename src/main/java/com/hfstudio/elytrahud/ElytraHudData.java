@@ -5,7 +5,7 @@ import net.minecraft.client.entity.EntityPlayerSP;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Vec3;
 
-import ganymedes01.etfuturum.api.elytra.IElytraPlayer;
+import com.hfstudio.doabarrelroll.util.ElytraEquipmentResolver;
 
 /**
  * Tracks flight telemetry data for ElytraHUD gauges.
@@ -42,10 +42,10 @@ public class ElytraHudData {
         yaw = player.rotationYaw;
 
         // Durability
-        ItemStack chestItem = player.inventory.armorInventory[2]; // Chest slot
-        if (chestItem != null && chestItem.getMaxDamage() > 0) {
-            durability = 1.0 - (double) chestItem.getItemDamage() / (double) chestItem.getMaxDamage();
-            currentDurability = chestItem.getMaxDamage() - chestItem.getItemDamage();
+        ItemStack equippedElytra = ElytraEquipmentResolver.findEquippedElytra(player);
+        if (equippedElytra != null && equippedElytra.getMaxDamage() > 0) {
+            durability = 1.0 - (double) equippedElytra.getItemDamage() / (double) equippedElytra.getMaxDamage();
+            currentDurability = equippedElytra.getMaxDamage() - equippedElytra.getItemDamage();
         } else {
             durability = 1.0;
             currentDurability = 0;
@@ -70,6 +70,6 @@ public class ElytraHudData {
     }
 
     public static boolean isElytraFlying(EntityPlayerSP player) {
-        return player instanceof IElytraPlayer && ((IElytraPlayer) player).etfu$isElytraFlying();
+        return ElytraEquipmentResolver.isElytraFlying(player);
     }
 }

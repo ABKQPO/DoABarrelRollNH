@@ -9,11 +9,11 @@ import net.minecraft.item.ItemFlintAndSteel;
 import net.minecraft.item.ItemStack;
 
 import com.hfstudio.doabarrelroll.DoABarrelRollNH;
+import com.hfstudio.doabarrelroll.util.ElytraEquipmentResolver;
 import com.hfstudio.flightassistant.FAConfig;
 
 import cpw.mods.fml.common.network.simpleimpl.IMessageHandler;
 import cpw.mods.fml.common.network.simpleimpl.MessageContext;
-import ganymedes01.etfuturum.api.elytra.IElytraPlayer;
 
 /**
  * Server-side handler for ThrowTntMessage.
@@ -37,7 +37,7 @@ public class ThrowTntMessageHandler implements IMessageHandler<ThrowTntMessage, 
         }
 
         // Must be elytra flying (server-side IElytraPlayer check)
-        if (!(player instanceof IElytraPlayer) || !((IElytraPlayer) player).etfu$isElytraFlying()) {
+        if (!ElytraEquipmentResolver.isElytraFlying(player)) {
             return;
         }
 
