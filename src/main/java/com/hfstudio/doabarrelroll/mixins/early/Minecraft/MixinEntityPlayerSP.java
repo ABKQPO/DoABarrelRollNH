@@ -1,5 +1,6 @@
 package com.hfstudio.doabarrelroll.mixins.early.Minecraft;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.EntityPlayerSP;
 
 import org.spongepowered.asm.mixin.Mixin;
@@ -25,7 +26,8 @@ public abstract class MixinEntityPlayerSP {
             shift = At.Shift.AFTER))
     private void dabr$clearStrafeInput(CallbackInfo ci) {
         EntityPlayerSP self = (EntityPlayerSP) (Object) this;
-        if (RollRuntime.shouldRoll(self)) {
+        Minecraft mc = Minecraft.getMinecraft();
+        if (RollRuntime.shouldRoll(self) && mc.currentScreen == null && mc.inGameHasFocus) {
             self.movementInput.moveStrafe = 0.0f;
         }
     }

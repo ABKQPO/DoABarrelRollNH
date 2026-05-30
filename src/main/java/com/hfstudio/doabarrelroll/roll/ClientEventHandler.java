@@ -54,6 +54,9 @@ public class ClientEventHandler {
         boolean wasRolling = RollRuntime.STATE.isRolling();
         RollRuntime.STATE.setRolling(rolling);
         RollRuntime.tickBarrelRoll(player);
+        if (rolling && mc.currentScreen != null && !mc.isGamePaused()) {
+            RollRuntime.tickScreenOpenFlight(player);
+        }
 
         // Update flight timer
         if (rolling) {

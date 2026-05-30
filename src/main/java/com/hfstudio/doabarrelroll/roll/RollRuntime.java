@@ -97,15 +97,27 @@ public final class RollRuntime {
         }
 
         double dt = getDeltaSeconds(System.nanoTime());
+        applyFlightControl(player, yawInput, pitchInput, dt, true);
+    }
 
-        // Convert raw mouse deltas to input space
+    /**
+     * Advances banking, righting, and smoothing while a GUI is open and mouse look is not being updated.
+     */
+    public static void tickScreenOpenFlight(EntityPlayerSP player) {
+        if (player == null || !shouldRoll(player)) {
+            return;
+        }
+
+        double dt = getDeltaSeconds(System.nanoTime());
+        applyFlightControl(player, 0.0f, 0.0f, dt, false);
+    }
+
+    private static void applyFlightControl(EntityPlayerSP player, float yawInput, float pitchInput, double dt,
+        boolean allowKeyboardYaw) {
         double mouseX = yawInput;
-        // In 1.7.10, the mouse Y input passed to setAngles is inverted relative to modern cursor delta; flip to match
-        // DABR math
         double mouseY = -pitchInput;
 
         if (ModConfig.momentumBasedMouse) {
-            // Accumulate "virtual joystick" vector, simulating DABR's momentum mouse
             mouseTurnX += mouseX / 300.0;
             mouseTurnY += mouseY / 300.0;
 
@@ -133,7 +145,7 @@ public final class RollRuntime {
             mouseTurnY = 0.0;
         }
 
-        double keyAxis = getKeyAxisInput(dt);
+        double keyAxis = allowKeyboardYaw ? getKeyAxisInput(dt) : 0.0;
 
         FlightControlInput.Axes axes = FlightControlInput.resolve(
             mouseY,
